@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.example.blushfinance.R;
 
-// TODO: Change this class to your actual java code, keep the name the same
 
 public class PotsFragment extends Fragment {
 
@@ -19,6 +18,6 @@ public class PotsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pots, container, false);
+        return inflater.inflate(R.layout.p_activity_pots, container, false);
     }
 }
