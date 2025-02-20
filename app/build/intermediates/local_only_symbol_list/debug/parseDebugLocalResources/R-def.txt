@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color backgroundColor
+color black
+color darkGrey
+color gray
+color lightGrey
+color menuColor
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id main
+id newsButton
+id news_caption
+id news_description
+id news_image
+id news_recycler_view
+id news_title
+id potsPageButton
+id trackingPageButton
+layout activity_main
+layout activity_news
+layout news_card
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.BlushFinance
+style Theme.BlushFinance
+xml backup_rules
+xml data_extraction_rules
