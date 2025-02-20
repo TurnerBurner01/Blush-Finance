@@ -1369,7 +1369,6 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
-color backgroundColor
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1389,7 +1388,10 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
-color darkGrey
+color colorAccent
+color colorBackground
+color colorPrimary
+color colorSecondary
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1436,10 +1438,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
-color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color lightGrey
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2039,7 +2039,6 @@ color material_timepicker_button_stroke
 color material_timepicker_clock_text_color
 color material_timepicker_clockface
 color material_timepicker_modebutton_tint
-color menuColor
 color mtrl_btn_bg_color_selector
 color mtrl_btn_ripple_color
 color mtrl_btn_stroke_color_selector
@@ -3017,6 +3016,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable finance_icon
+drawable home_icon
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3097,6 +3098,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable news_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3110,6 +3112,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pots_icon
+drawable profile_icon
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3210,6 +3214,7 @@ id below
 id bestChoice
 id blocking
 id bottom
+id bottom_nav_menu
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3313,6 +3318,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3419,6 +3425,11 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_finance
+id nav_home
+id nav_news
+id nav_pots
+id nav_profile
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3429,12 +3440,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id newsButton
-id news_caption
-id news_description
-id news_image
-id news_recycler_view
-id news_title
 id noScroll
 id noState
 id none
@@ -3477,7 +3482,6 @@ id percent
 id pin
 id position
 id postLayout
-id potsPageButton
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3574,9 +3578,14 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id text_finance
+id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_news
+id text_pots
+id text_profile
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3591,7 +3600,6 @@ id toggle
 id top
 id topPanel
 id touch_outside
-id trackingPageButton
 id transitionToEnd
 id transitionToStart
 id transition_clip
@@ -3742,7 +3750,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout activity_news
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3759,6 +3766,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_finance
+layout fragment_home
+layout fragment_news
+layout fragment_pots
+layout fragment_profile
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3812,7 +3824,6 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
-layout news_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -3823,6 +3834,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3878,6 +3890,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
