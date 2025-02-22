@@ -1,12 +1,5 @@
-package com.example.blushfinance.NewsPage;
+package com.example.blushfinance.fragments.News_Page;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
-import com.example.blushfinance.NewsPage.Article;
 
 import com.example.blushfinance.R;
 
@@ -41,7 +33,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     @Override
     public NewsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // Make sure the layout being inflated is correct
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_news, parent, false);
         return new NewsViewHolder(v);
     }
 

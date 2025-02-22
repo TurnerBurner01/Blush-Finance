@@ -1,4 +1,4 @@
-package com.example.blushfinance.NewsPage;
+package com.example.blushfinance.fragments.News_Page;
 
 import com.google.gson.annotations.SerializedName;
 
