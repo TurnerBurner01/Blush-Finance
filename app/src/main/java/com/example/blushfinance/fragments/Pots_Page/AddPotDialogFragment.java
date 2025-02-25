@@ -17,6 +17,11 @@ public class AddPotDialogFragment extends DialogFragment {
 
     private EditText nameInput, colorInput, maxAmountInput;
     private Spinner typeSpinner;
+    private PotsFragment potsFragment;
+
+    public AddPotDialogFragment(PotsFragment potsFragment) {
+        this.potsFragment = potsFragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,22 +33,32 @@ public class AddPotDialogFragment extends DialogFragment {
         typeSpinner = view.findViewById(R.id.type_spinner);
 
         // Set up the type spinner with pot types
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.pot_types, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                getContext(), R.array.pot_types, android.R.layout.simple_spinner_item
+        );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpinner.setAdapter(adapter);
 
         // Set up the "Add Pot" button
         Button addButton = view.findViewById(R.id.add_button);
         addButton.setOnClickListener(v -> {
-            String name = nameInput.getText().toString();
-            String color = colorInput.getText().toString();
-            String maxAmount = maxAmountInput.getText().toString();
+            String name = nameInput.getText().toString().trim();
+            String color = colorInput.getText().toString().trim();
+            String maxAmountStr = maxAmountInput.getText().toString().trim();
             String type = typeSpinner.getSelectedItem().toString();
 
-            Pot newPot = new Pot(name, color, Integer.parseInt(maxAmount), type);
-            // Add the new pot to your list and update the RecyclerView
-            ((PotsActivity) getActivity()).addNewPot(newPot);
-            dismiss();
+            if (!name.isEmpty() && !color.isEmpty() && !maxAmountStr.isEmpty()) {
+                int maxAmount = Integer.parseInt(maxAmountStr);
+
+                Pot newPot = new Pot(name, color, maxAmount, type);
+
+                // Ensure potsFragment is not null before calling addNewPot()
+                if (potsFragment != null) {
+                    potsFragment.addNewPot(newPot);
+                }
+
+                dismiss();
+            }
         });
 
         return view;

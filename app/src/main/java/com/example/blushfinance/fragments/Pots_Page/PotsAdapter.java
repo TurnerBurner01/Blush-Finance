@@ -18,11 +18,13 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context context;
     private static final int ITEM_POT = 0;
     private static final int ITEM_PLUS = 1;
+    private PotsFragment potsFragment;
 
     // Constructor for the adapter
-    public PotsAdapter(List<Pot> pots, Context context) {
+    public PotsAdapter(List<Pot> pots, Context context, PotsFragment potsFragment) {
         this.pots = pots;
         this.context = context;
+        this.potsFragment = potsFragment;
     }
 
     @Override
@@ -92,7 +94,7 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     // Open the dialog to add a new pot
     private void showAddPotDialog() {
-        AddPotDialogFragment dialog = new AddPotDialogFragment();
+        AddPotDialogFragment dialog = new AddPotDialogFragment(potsFragment);
         dialog.show(((AppCompatActivity) context).getSupportFragmentManager(), "AddPotDialog");
     }
 }

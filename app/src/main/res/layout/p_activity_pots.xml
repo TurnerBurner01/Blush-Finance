@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context=".fragments.Pots_Page.PotsActivity">
+    tools:context=".fragments.Pots_Page.PotsFragment">
 
     <TextView
         android:id="@+id/potsTitle"

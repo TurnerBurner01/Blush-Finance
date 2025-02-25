@@ -44,7 +44,7 @@ public class PotsFragment extends Fragment {
 
         potList = new ArrayList<>();  // Initialize pot list
 
-        potsAdapter = new PotsAdapter(potList, getContext()); // Use getContext() instead of 'this'
+        potsAdapter = new PotsAdapter(potList, getContext(), this);
         recyclerView.setAdapter(potsAdapter);
 
         // Example of creating a default pot using the factory
