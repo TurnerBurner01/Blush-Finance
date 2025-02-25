@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
-
 import com.example.blushfinance.R;
 
 public class AddPotDialogFragment extends DialogFragment {
@@ -32,14 +32,12 @@ public class AddPotDialogFragment extends DialogFragment {
         maxAmountInput = view.findViewById(R.id.max_amount_input);
         typeSpinner = view.findViewById(R.id.type_spinner);
 
-        // Set up the type spinner with pot types
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 getContext(), R.array.pot_types, android.R.layout.simple_spinner_item
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpinner.setAdapter(adapter);
 
-        // Set up the "Add Pot" button
         Button addButton = view.findViewById(R.id.add_button);
         addButton.setOnClickListener(v -> {
             String name = nameInput.getText().toString().trim();
@@ -47,17 +45,22 @@ public class AddPotDialogFragment extends DialogFragment {
             String maxAmountStr = maxAmountInput.getText().toString().trim();
             String type = typeSpinner.getSelectedItem().toString();
 
-            if (!name.isEmpty() && !color.isEmpty() && !maxAmountStr.isEmpty()) {
-                int maxAmount = Integer.parseInt(maxAmountStr);
+            if (name.isEmpty() || color.isEmpty() || maxAmountStr.isEmpty()) {
+                Toast.makeText(getContext(), "All fields must be filled", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
+            try {
+                int maxAmount = Integer.parseInt(maxAmountStr);
                 Pot newPot = new Pot(name, color, maxAmount, type);
 
-                // Ensure potsFragment is not null before calling addNewPot()
                 if (potsFragment != null) {
                     potsFragment.addNewPot(newPot);
                 }
 
                 dismiss();
+            } catch (NumberFormatException e) {
+                Toast.makeText(getContext(), "Max amount must be a number", Toast.LENGTH_SHORT).show();
             }
         });
 
