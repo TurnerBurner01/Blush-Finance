@@ -8,10 +8,10 @@
 
     <TextView
         android:id="@+id/plus_text"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:text="+"
-        android:textSize="32sp"
+        android:textSize="64sp"
         android:textColor="@android:color/white"
         android:background="@drawable/rounded_square_background"
         android:gravity="center"
