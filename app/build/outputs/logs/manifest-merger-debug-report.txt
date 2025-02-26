@@ -11,6 +11,8 @@ MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\asus\.gradle\caches\8.
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\73485a610a8ebf9ae78b8ad9ae99cf17\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\asus\.gradle\caches\8.10.2\transforms\f74cbb341d3836db828331432bd4e154\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.10.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\adbbbc40e042702e6ca34c3ee1ecbfa6\transformed\activity-1.10.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\456e179a0e6d36012923f901f240bbe7\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\asus\.gradle\caches\8.10.2\transforms\46ca0e8e6755a6752d2a015cff705195\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\7d1fa39d1fb1b5d13719e4deae159255\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\a4fbe38a548e7d2706236c90b02432a8\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
@@ -34,7 +36,6 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\asus\.gradle\cac
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\69542f6adebe722099fcaa5c60871cb5\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.13.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\b892bf114b495a046676a8dc4b3e08ef\transformed\core-1.13.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\65a01f0c4b007bb308a736ba15ce94df\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\223a9b83437008a3f8bd6a619c37cdfb\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\asus\.gradle\caches\8.10.2\transforms\a4d727a4e94445bbb73437f73d35ba13\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\bf1f428808af37e86f5c1b8bfd7a93fa\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -130,6 +131,10 @@ MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\asus\.gradle\caches\8.10
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\asus\.gradle\caches\8.10.2\transforms\f74cbb341d3836db828331432bd4e154\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.10.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\adbbbc40e042702e6ca34c3ee1ecbfa6\transformed\activity-1.10.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.10.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\adbbbc40e042702e6ca34c3ee1ecbfa6\transformed\activity-1.10.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\456e179a0e6d36012923f901f240bbe7\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\456e179a0e6d36012923f901f240bbe7\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\asus\.gradle\caches\8.10.2\transforms\46ca0e8e6755a6752d2a015cff705195\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\asus\.gradle\caches\8.10.2\transforms\46ca0e8e6755a6752d2a015cff705195\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\7d1fa39d1fb1b5d13719e4deae159255\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
@@ -176,8 +181,6 @@ MERGED from [androidx.core:core:1.13.0] C:\Users\asus\.gradle\caches\8.10.2\tran
 MERGED from [androidx.core:core:1.13.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\b892bf114b495a046676a8dc4b3e08ef\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\65a01f0c4b007bb308a736ba15ce94df\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\65a01f0c4b007bb308a736ba15ce94df\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\82071c466d19cbda22be14c766e0c6b0\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\223a9b83437008a3f8bd6a619c37cdfb\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\asus\.gradle\caches\8.10.2\transforms\223a9b83437008a3f8bd6a619c37cdfb\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\asus\.gradle\caches\8.10.2\transforms\a4d727a4e94445bbb73437f73d35ba13\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
