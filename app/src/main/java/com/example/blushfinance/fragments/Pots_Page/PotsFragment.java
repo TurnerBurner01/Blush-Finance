@@ -47,11 +47,15 @@ public class PotsFragment extends Fragment {
         potsAdapter = new PotsAdapter(potList, getContext(), this);
         recyclerView.setAdapter(potsAdapter);
 
-        // Example of creating a default pot using the factory
-        Pot defaultPot = PotFactory.createPot("Default", "Default Pot 1", "Green", 200);
+        // Test pots
+        Pot test1Pot = PotFactory.createPot("Default", "Default Pot 1", "Green", 200);
+        Pot test2Pot = PotFactory.createPot("Default", "Default Pot 1", "Green", 200);
+        Pot test3Pot = PotFactory.createPot("Default", "Default Pot 1", "Green", 200);
 
         // Add the created pot to the list and notify the adapter
-        potList.add(defaultPot);
+        potList.add(test1Pot);
+        potList.add(test2Pot);
+        potList.add(test3Pot);
         potsAdapter.notifyDataSetChanged();
 
         // Add the plus icon item at the end of the list

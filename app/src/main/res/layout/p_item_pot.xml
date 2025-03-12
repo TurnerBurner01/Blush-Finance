@@ -9,8 +9,8 @@
     <!-- Pot Color (Circle) -->
     <View
         android:id="@+id/pot_color"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:background="@drawable/rounded_square_background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
