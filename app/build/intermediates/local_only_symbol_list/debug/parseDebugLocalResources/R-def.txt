@@ -1,10 +1,11 @@
 R_DEF: Internal format may change without notice
 local
+color backgroundColor
 color black
-color colorAccent
-color colorBackground
-color colorPrimary
-color colorSecondary
+color darkGrey
+color gray
+color lightGrey
+color menuColor
 color white
 drawable finance_icon
 drawable home_icon
@@ -21,17 +22,22 @@ id nav_home
 id nav_news
 id nav_pots
 id nav_profile
+id news_caption
+id news_image
+id news_recycler_view
 id text_finance
 id text_home
 id text_news
 id text_pots
 id text_profile
 layout activity_main
+layout activity_news
 layout fragment_finance
 layout fragment_home
 layout fragment_news
 layout fragment_pots
 layout fragment_profile
+layout news_item
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
