@@ -30,8 +30,8 @@
         android:testOnly="true"
         android:theme="@style/Theme.BlushFinance" >
         <activity
-            android:name="com.example.blushfinance.fragments.News_Page.News_Page"
-            android:exported="false" />
+            android:name="com.example.blushfinance.fragments.News_Page.MainAct"
+            android:exported="true" />
         <activity
             android:name="com.example.blushfinance.MainActivity"
             android:exported="true" >
@@ -42,6 +42,10 @@
             </intent-filter>
         </activity>
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.blushfinance.com.squareup.picasso"
+            android:exported="false" />
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.blushfinance.androidx-startup"

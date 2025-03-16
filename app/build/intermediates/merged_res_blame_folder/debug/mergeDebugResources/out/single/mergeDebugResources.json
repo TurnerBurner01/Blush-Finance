@@ -28,6 +28,10 @@
         "source": "com.example.blushfinance.app-main-34:/layout/activity_news.xml"
     },
     {
+        "merged": "com.example.blushfinance.app-debug-32:/layout_activity_news_full.xml.flat",
+        "source": "com.example.blushfinance.app-main-34:/layout/activity_news_full.xml"
+    },
+    {
         "merged": "com.example.blushfinance.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.blushfinance.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -84,6 +88,18 @@
         "source": "com.example.blushfinance.app-main-34:/xml/data_extraction_rules.xml"
     },
     {
+        "merged": "com.example.blushfinance.app-debug-32:/layout_news_recycler_row.xml.flat",
+        "source": "com.example.blushfinance.app-main-34:/layout/news_recycler_row.xml"
+    },
+    {
+        "merged": "com.example.blushfinance.app-debug-32:/drawable_baseline_hide_image_24.xml.flat",
+        "source": "com.example.blushfinance.app-main-34:/drawable/baseline_hide_image_24.xml"
+    },
+    {
+        "merged": "com.example.blushfinance.app-debug-32:/drawable_baseline_newspaper_24.xml.flat",
+        "source": "com.example.blushfinance.app-main-34:/drawable/baseline_newspaper_24.xml"
+    },
+    {
         "merged": "com.example.blushfinance.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.example.blushfinance.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
@@ -104,8 +120,8 @@
         "source": "com.example.blushfinance.app-main-34:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.blushfinance.app-debug-32:/layout_news_item.xml.flat",
-        "source": "com.example.blushfinance.app-main-34:/layout/news_item.xml"
+        "merged": "com.example.blushfinance.app-debug-32:/drawable_no_image_icon.xml.flat",
+        "source": "com.example.blushfinance.app-main-34:/drawable/no_image_icon.xml"
     },
     {
         "merged": "com.example.blushfinance.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",

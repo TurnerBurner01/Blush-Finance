@@ -2095,6 +2095,8 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color my_primary
+color my_secondary
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -3004,6 +3006,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_hide_image_24
+drawable baseline_newspaper_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3100,6 +3104,7 @@ drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable news_icon
+drawable no_image_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3199,7 +3204,11 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id app_title
 id arc
+id article_image_view
+id article_source
+id article_title
 id asConfigured
 id async
 id auto
@@ -3220,6 +3229,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_1
+id btn_2
+id btn_3
+id btn_4
+id btn_5
+id btn_6
+id btn_7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3338,6 +3354,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal
+id horizontal_buttons
 id horizontal_only
 id icon
 id icon_group
@@ -3365,6 +3382,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logo
 id m3_side_sheet
 id main
 id marquee
@@ -3441,8 +3459,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id news_caption
-id news_image
 id news_recycler_view
 id noScroll
 id noState
@@ -3487,6 +3503,7 @@ id pin
 id position
 id postLayout
 id pressed
+id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3519,6 +3536,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -3587,7 +3605,6 @@ id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_news
 id text_pots
 id text_profile
 id textinput_counter
@@ -3631,6 +3648,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id web_view
 id west
 id withText
 id with_icon
@@ -3756,6 +3774,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_news
+layout activity_news_full
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3830,7 +3849,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
-layout news_item
+layout news_recycler_row
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
