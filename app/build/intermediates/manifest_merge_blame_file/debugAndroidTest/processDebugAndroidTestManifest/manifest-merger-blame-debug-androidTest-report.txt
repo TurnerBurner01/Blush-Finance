@@ -3,24 +3,24 @@
 3    package="com.example.blushfinance.test" >
 4
 5    <uses-sdk
-5-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:5:5-74
+5-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:5:15-41
+6-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:5:15-41
 7        android:targetSdkVersion="35" />
-7-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:5:42-71
+7-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:11:5-15:74
+9-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:11:5-15:74
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:11:22-76
+10-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:14:22-52
+11-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:13:22-53
+12-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:13:22-53
 13        android:label="Tests for com.example.blushfinance"
-13-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:15:22-72
+13-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:15:22-72
 14        android:targetPackage="com.example.blushfinance" />
-14-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:12:22-70
+14-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:12:22-70
 15
 16    <queries>
 16-->[androidx.test:runner:1.6.1] C:\Users\omarm\.gradle\caches\8.10.2\transforms\b042d1b4826a6d16677c7671d3342003\transformed\runner-1.6.1\AndroidManifest.xml:24:5-28:15
@@ -40,12 +40,12 @@
 22-->[androidx.test:core:1.6.1] C:\Users\omarm\.gradle\caches\8.10.2\transforms\0b6b4aa0b8e0dd809715f093c4021b2b\transformed\core-1.6.1\AndroidManifest.xml:24:22-69
 23
 24    <application
-24-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:7:5-9:19
+24-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:8:9-60
-27-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest2422893169425650311.xml:8:23-57
+27-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:8:9-60
+27-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest12247603077110539095.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.6.1] C:\Users\omarm\.gradle\caches\8.10.2\transforms\0b6b4aa0b8e0dd809715f093c4021b2b\transformed\core-1.6.1\AndroidManifest.xml:27:9-34:20

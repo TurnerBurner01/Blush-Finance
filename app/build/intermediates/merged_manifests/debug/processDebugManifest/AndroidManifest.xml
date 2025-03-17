@@ -30,9 +30,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.BlushFinance" >
         <activity
-            android:name="com.example.blushfinance.fragments.News_Page.MainAct"
-            android:exported="true" />
-        <activity
             android:name="com.example.blushfinance.MainActivity"
             android:exported="true" >
             <intent-filter>

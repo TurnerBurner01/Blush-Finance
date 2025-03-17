@@ -3229,13 +3229,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btn_1
-id btn_2
-id btn_3
-id btn_4
-id btn_5
-id btn_6
-id btn_7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3382,7 +3375,6 @@ id line3
 id linear
 id listMode
 id list_item
-id logo
 id m3_side_sheet
 id main
 id marquee
@@ -3536,7 +3528,6 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
-id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -3648,7 +3639,6 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id web_view
 id west
 id withText
 id with_icon
@@ -3773,8 +3763,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout activity_news
-layout activity_news_full
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
