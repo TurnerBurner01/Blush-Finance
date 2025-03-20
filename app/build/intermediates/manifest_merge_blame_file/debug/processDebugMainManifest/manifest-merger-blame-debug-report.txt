@@ -48,8 +48,8 @@
 31-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\src\main\AndroidManifest.xml:15:9-50
 32        <activity
 32-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\src\main\AndroidManifest.xml:17:9-24:20
-33            android:name="com.example.blushfinance.MainActivity"
-33-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\src\main\AndroidManifest.xml:18:13-41
+33            android:name="com.example.blushfinance.NewsPage.MainActivity"
+33-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\src\main\AndroidManifest.xml:18:13-50
 34            android:exported="true" >
 34-->C:\Users\omarm\AndroidStudioProjects\Blush-Finance\app\src\main\AndroidManifest.xml:19:13-36
 35            <intent-filter>

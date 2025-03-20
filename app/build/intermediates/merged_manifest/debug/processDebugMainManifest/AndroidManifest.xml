@@ -30,7 +30,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.BlushFinance" >
         <activity
-            android:name="com.example.blushfinance.MainActivity"
+            android:name="com.example.blushfinance.NewsPage.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
