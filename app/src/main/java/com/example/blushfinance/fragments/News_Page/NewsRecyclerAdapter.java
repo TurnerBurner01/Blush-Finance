@@ -1,4 +1,6 @@
 package com.example.blushfinance.fragments.News_Page;
+
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +22,11 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     List<Article> articleList;
     NewsRecyclerAdapter(List<Article> articleList){
         this.articleList = articleList;
+
+
+
+
+
     }
 
 

@@ -3347,7 +3347,6 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal
-id horizontal_buttons
 id horizontal_only
 id icon
 id icon_group
@@ -3451,6 +3450,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id news
 id news_recycler_view
 id noScroll
 id noState

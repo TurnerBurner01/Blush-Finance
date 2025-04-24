@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/news"
     tools:context=".fragments.News_Page.NewsFragment">
 
     <TextView
@@ -18,25 +19,7 @@
         android:textColor="@color/my_primary"
         android:id="@+id/app_title"/>
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:id="@+id/horizontal_buttons">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-
-
-
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
 
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -46,9 +29,14 @@
         android:id="@+id/progress_bar"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/news_recycler_view"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
 
 
 

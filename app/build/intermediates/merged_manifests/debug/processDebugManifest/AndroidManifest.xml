@@ -30,7 +30,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.BlushFinance" >
         <activity
-            android:name="com.example.blushfinance.NewsPage.MainActivity"
+            android:name="com.example.blushfinance.fragments.News_Page.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.blushfinance.fragments.News_Page.NewsFullActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.blushfinance.fragments.News_Page.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.blushfinance.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
