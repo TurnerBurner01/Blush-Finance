@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.blushfinance.app-mergeDebugResources-29:/values-port/values-port.xml",
+            "outputFile": "com.example.blushfinance.app-mergeDebugResources-30:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\8.10.2\\transforms\\e8fdd60979a1f2aa517ab541aed0c7ef\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\omarm\\.gradle\\caches\\8.10.2\\transforms\\092ca4e6924ca02b7a8eaaebc2d0e01c\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

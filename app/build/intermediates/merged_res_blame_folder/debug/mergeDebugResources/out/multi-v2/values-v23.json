@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.blushfinance.app-mergeDebugResources-29:/values-v23/values-v23.xml",
+            "outputFile": "com.example.blushfinance.app-mergeDebugResources-30:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\8.10.2\\transforms\\def2ffaff7e935956fd81a11a4393272\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\omarm\\.gradle\\caches\\8.10.2\\transforms\\2abc174d8d99088c9c23f3baf2ba5ddd\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\8.10.2\\transforms\\82071c466d19cbda22be14c766e0c6b0\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\omarm\\.gradle\\caches\\8.10.2\\transforms\\4e15bcc272e53ca543f115958f256619\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\8.10.2\\transforms\\e8fdd60979a1f2aa517ab541aed0c7ef\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\omarm\\.gradle\\caches\\8.10.2\\transforms\\092ca4e6924ca02b7a8eaaebc2d0e01c\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
