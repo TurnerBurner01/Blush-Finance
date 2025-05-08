@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
     }
-
+  
     // Bottom navigation fragment switcher using if-else
     private final NavigationBarView.OnItemSelectedListener navListener = item -> {
         Fragment selectedFragment = null;
@@ -114,5 +114,3 @@ public class MainActivity extends AppCompatActivity {
         return false;
     };
 }
-
-
