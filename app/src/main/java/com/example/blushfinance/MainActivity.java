@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonLogin, buttonCreate;
     private TextView textForgotPassword;
     private boolean isLoggedIn = false;
-    private com.example.blushfinance.DatabaseHelper db;
+    private com.example.blushfinance.fragments.DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.login); // login.xml layout
 
         // Initialize database and views
-        db = new com.example.blushfinance.DatabaseHelper(this);
+        db = new com.example.blushfinance.fragments.DatabaseHelper(this);
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Create account button
         buttonCreate.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.RegisterActivity.class);
+            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.fragments.RegisterActivity.class);
             startActivity(intent);
         });
 
