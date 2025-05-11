@@ -1,4 +1,4 @@
-package com.example.blushfinance;
+package com.example.blushfinance.fragments.Login_Page;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.blushfinance.MainActivity;
+import com.example.blushfinance.R;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
 
