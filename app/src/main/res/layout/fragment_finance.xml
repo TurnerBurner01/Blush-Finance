@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/finance_fragment_container"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/backgroundColor">
+    android:background="@color/backgroundColor" tools:context=".fragments.Finance_Page.FinanceFragment">
 
-    <!-- Button to switch between Income and Expenses -->
     <Button
-        android:id="@+id/btn_switch"
+        android:id="@+id/switch_finance_mode_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch"
-        android:layout_gravity="end"
-        android:padding="8dp"
-        android:layout_margin="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
 
-    <!-- Fragment Container for Income and Expenses Pages -->
     <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp"/>
+        android:id="@+id/finance_content_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/switch_finance_mode_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
 
-    <!-- Include GridLayout with CardViews (for Income or Expenses page) -->
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/gridLayout"
-        android:rowCount="2"
-        android:columnCount="3"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="80dp">
-
-        <!-- Your CardViews here (like imageCard, videoCard, etc.) -->
-        <!-- Repeat the structure of CardViews like the one you provided earlier -->
-    </GridLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,15 +10,13 @@
     style="?attr/textInputFilledStyle"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:hint="@string/dialog_item_name_hint"
-    app:layout_constraintTop_toTopOf="parent"
+    android:hint="@string/dialog_item_name_hint" app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginBottom="8dp">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/name_input"
-        android:layout_width="match_parent"
+        android:id="@+id/editTextExpenseName" android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
         android:minHeight="48dp"
@@ -30,15 +28,13 @@
         style="?attr/textInputFilledStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/dialog_item_amount_hint"
-        app:layout_constraintTop_toBottomOf="@id/name_input_layout"
+        android:hint="@string/dialog_item_amount_hint" app:layout_constraintTop_toBottomOf="@id/name_input_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/amount_input"
-            android:layout_width="match_parent"
+            android:id="@+id/editTextExpenseAmount" android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
@@ -56,20 +52,15 @@
         android:layout_marginTop="24dp">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/cancel_button"
-            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/buttonCancelExpense" style="?attr/materialButtonOutlinedStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/dialog_button_cancel"
-            android:layout_marginEnd="8dp"/> <com.google.android.material.button.MaterialButton
-        android:id="@+id/add_button"
-        style="?attr/materialButtonStyle"
+            android:text="@string/dialog_button_cancel" android:layout_marginEnd="8dp"/> <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddExpense" style="?attr/materialButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/dialog_button_add" />
-
-    </LinearLayout>
+        android:text="@string/dialog_button_add" /> </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

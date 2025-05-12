@@ -2,4 +2,16 @@
     <string name="app_name">Blush Finance</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+        <string name="dialog_item_name_hint">Item Name (e.g., Salary, Groceries)</string>
+        <string name="dialog_item_amount_hint">Amount (e.g., 1500)</string>
+        <string name="dialog_button_cancel">Cancel</string>
+        <string name="dialog_button_add">Add</string>
+
+        <string name="dialog_title_add_income">Add New Income</string>
+        <string name="dialog_title_add_expense">Add New Expense</string>
+
+
+
 </resources>
