@@ -20,7 +20,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText editTextUsername, editTextPassword;
     private Button buttonLogin, buttonCreate;
     private TextView textForgotPassword;
@@ -51,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (db.checkUser(username, password)) {
+                // Saving username for home page
+                getSharedPreferences("MyAppPrefs", MODE_PRIVATE)
+                        .edit()
+                        .putString("username", username)
+                        .apply();
+
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 isLoggedIn = true;
                 showMainApp();

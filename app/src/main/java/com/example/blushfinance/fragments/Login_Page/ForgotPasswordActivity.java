@@ -1,4 +1,6 @@
+
 package com.example.blushfinance.fragments.Login_Page;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,14 +18,14 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     private EditText editTextUsername, editTextNewPassword;
     private Button buttonResetPassword, buttonBackToLogin;
-    private com.example.blushfinance.DatabaseHelper db;
+    private com.example.blushfinance.fragments.DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
-        db = new com.example.blushfinance.DatabaseHelper(this);
+        db = new com.example.blushfinance.fragments.DatabaseHelper(this);
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextNewPassword = findViewById(R.id.editTextNewPassword);

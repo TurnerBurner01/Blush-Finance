@@ -24,7 +24,7 @@ import android.util.Log;
 public class NewsFragment extends Fragment {
 
     private static final String TAG = "NewsFragment";
-    private static final String API_KEY = "f1f8432c6626431f89f2b3993d9db3b8";
+    public static final String API_KEY = "f1f8432c6626431f89f2b3993d9db3b8";
 
     private RecyclerView recyclerView;
 
