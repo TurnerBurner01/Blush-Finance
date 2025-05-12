@@ -1,4 +1,4 @@
-package com.example.blushfinance.fragments.Profile_Page;
+package com.example.blushfinance.fragments.Login_Page;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
