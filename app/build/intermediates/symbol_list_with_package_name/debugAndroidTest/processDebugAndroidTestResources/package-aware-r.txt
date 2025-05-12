@@ -1,3 +1,0 @@
-com.example.blushfinance.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

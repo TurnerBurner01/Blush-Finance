@@ -1,0 +1,61 @@
+Built application files
+*.apk
+*.ap_
+*.aab
+
+Files for the ART/Dalvik VM
+*.dex
+
+Java class files
+*.class
+
+Generated files
+bin/
+gen/
+build/
+out/
+app/build/
+*/build/
+
+Gradle files
+.gradle/
+**/build/
+!gradle-wrapper.jar
+
+Signing files
+*.jks
+*.keystore
+
+Local configuration files
+local.properties
+*.iml
+.idea/
+.gradle/
+.cxx/
+captures/
+.externalNativeBuild/
+.vscode/
+
+Log files
+.log
+
+Android Studio navigation editor temp files
+.navigation/
+
+NDK and CMake
+.cmake/
+cmake-build-/
+
+Mac OS and Windows system files
+.DS_Store
+Thumbs.db
+
+Crashlytics and Firebase
+fabric.properties
+crashlytics-build.properties
+
+Kotlin specific
+*.kotlin_module
+
+Misc
+*.orig
