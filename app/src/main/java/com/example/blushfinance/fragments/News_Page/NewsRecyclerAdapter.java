@@ -1,7 +1,7 @@
 package com.example.blushfinance.fragments.News_Page;
 
-import android.content.Context;
-import android.content.Intent;
+//import android.content.Context;
+//import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +20,7 @@ import java.util.List;
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
 
     List<Article> articleList;
-    NewsRecyclerAdapter(List<Article> articleList){
+    public NewsRecyclerAdapter(List<Article> articleList){
         this.articleList = articleList;
 
 
@@ -59,7 +59,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         return articleList.size();
     }
 
-    class NewsViewHolder extends RecyclerView.ViewHolder{
+    static class NewsViewHolder extends RecyclerView.ViewHolder{
 
         TextView titleTextView,sourceTextView;
         ImageView imageView;

@@ -1,4 +1,4 @@
-package com.example.blushfinance;
+package com.example.blushfinance.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +11,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.blushfinance.MainActivity;
+import com.example.blushfinance.R;
+
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText usernameEditText, passwordEditText, confirmPasswordEditText;
     private ImageView showPasswordToggle, showConfirmPasswordToggle;
     private Button registerButton, backToLoginButton;
-    private com.example.blushfinance.DatabaseHelper db;
+    private com.example.blushfinance.fragments.DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register); // ✅ correct layout reference
 
         // Initialize views
-        db = new com.example.blushfinance.DatabaseHelper(this);
+        db = new com.example.blushfinance.fragments.DatabaseHelper(this);
         usernameEditText = findViewById(R.id.username);
         passwordEditText = findViewById(R.id.password);
         confirmPasswordEditText = findViewById(R.id.confirmPassword);

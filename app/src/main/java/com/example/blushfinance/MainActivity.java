@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonLogin, buttonCreate;
     private TextView textForgotPassword;
     private boolean isLoggedIn = false;
-    private com.example.blushfinance.DatabaseHelper db;
+    private com.example.blushfinance.fragments.DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.login); // login.xml layout
 
         // Initialize database and views
-        db = new com.example.blushfinance.DatabaseHelper(this);
+        db = new com.example.blushfinance.fragments.DatabaseHelper(this);
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
@@ -51,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (db.checkUser(username, password)) {
+                // Saving username for home page
+                getSharedPreferences("MyAppPrefs", MODE_PRIVATE)
+                        .edit()
+                        .putString("username", username)
+                        .apply();
+
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 isLoggedIn = true;
                 showMainApp();
@@ -61,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Create account button
         buttonCreate.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.RegisterActivity.class);
+            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.fragments.RegisterActivity.class);
             startActivity(intent);
         });
 
         // Forgot password link
         textForgotPassword.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.ForgotPasswordActivity.class);
+            Intent intent = new Intent(MainActivity.this, com.example.blushfinance.fragments.Profile_Page.ForgotPasswordActivity.class);
             startActivity(intent);
         });
     }
