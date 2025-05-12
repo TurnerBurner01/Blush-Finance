@@ -7,4 +7,17 @@
     <color name="darkGrey">#767b91</color>
     <color name="lightGrey">#c7ccdb</color>
     <color name="gray">#808080</color>
+    
+    <color name="my_primary">#FA886E</color>
+    <color name="my_secondary">#FF000000</color>
+
+    <!-- ollie colours -->
+    <color name="menu_dark_text">#262626</color>
+    <color name="menu_income">#00B050</color>
+    <color name="menu_expenses">#C00000</color>
+    <color name="menu_card">#F2F2F2</color>
+    <color name="menu_card_detail">#D9D9D9</color>
+    <color name="balance_blue">#00B0F0</color>
+    <color name="income_green">#00B050</color>
+    <color name="expenses_red">#C00000</color>
 </resources>
