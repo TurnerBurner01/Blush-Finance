@@ -1,4 +1,4 @@
-package com.example.blushfinance;
+package com.example.blushfinance.fragments;
 
 import android.content.ContentValues;
 import android.content.Context;
