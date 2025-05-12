@@ -36,7 +36,6 @@ dependencies {
 
 
 // OkHttp Logging Interceptor
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -46,9 +45,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.github.KwabenBerko:News-API-Java:1.0.2")
     implementation("com.squareup.picasso:picasso:2.8")
-
-
-
-
 
 }
