@@ -18,15 +18,6 @@
 
         <!-- Main Login Activity -->
         <activity
-            android:name=".fragments.News_Page.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".fragments.News_Page.NewsFullActivity"
-            android:exported="false" />
-        <activity
-            android:name=".fragments.News_Page.SplashActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -37,10 +28,10 @@
         </activity>
 
         <!-- Register Activity -->
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".fragments.RegisterActivity" />
 
         <!-- Forgot Password Activity -->
-        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".fragments.Login_Page.ForgotPasswordActivity" />
 
     </application>
 
