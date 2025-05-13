@@ -9,32 +9,23 @@
 
     <EditText
         android:id="@+id/name_input"
+        style="?attr/textInputFilledStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Pot Name"
         android:inputType="text"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <EditText
-        android:id="@+id/color_input"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Pot Color (Hex Code)"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/name_input"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/max_amount_input"
+        style="?attr/textInputFilledStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Max Amount"
+        android:hint="Amount For Pot"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/color_input"
+        app:layout_constraintTop_toBottomOf="@id/name_input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
