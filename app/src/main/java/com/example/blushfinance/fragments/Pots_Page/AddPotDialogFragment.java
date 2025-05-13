@@ -15,7 +15,7 @@ import com.example.blushfinance.R;
 
 public class AddPotDialogFragment extends DialogFragment {
 
-    private EditText nameInput, colorInput, maxAmountInput;
+    private EditText nameInput, maxAmountInput;
     private Spinner typeSpinner;
     private PotsFragment potsFragment;
 
@@ -28,7 +28,6 @@ public class AddPotDialogFragment extends DialogFragment {
         View view = inflater.inflate(R.layout.p_dialog_add_pot, container, false);
 
         nameInput = view.findViewById(R.id.name_input);
-        colorInput = view.findViewById(R.id.color_input);
         maxAmountInput = view.findViewById(R.id.max_amount_input);
         typeSpinner = view.findViewById(R.id.type_spinner);
 
@@ -41,18 +40,17 @@ public class AddPotDialogFragment extends DialogFragment {
         Button addButton = view.findViewById(R.id.add_button);
         addButton.setOnClickListener(v -> {
             String name = nameInput.getText().toString().trim();
-            String color = colorInput.getText().toString().trim();
             String maxAmountStr = maxAmountInput.getText().toString().trim();
             String type = typeSpinner.getSelectedItem().toString();
 
-            if (name.isEmpty() || color.isEmpty() || maxAmountStr.isEmpty()) {
+            if (name.isEmpty() || maxAmountStr.isEmpty()) {
                 Toast.makeText(getContext(), "All fields must be filled", Toast.LENGTH_SHORT).show();
                 return;
             }
 
             try {
                 int maxAmount = Integer.parseInt(maxAmountStr);
-                Pot newPot = new Pot(name, color, maxAmount, type);
+                Pot newPot = PotFactory.createPot(type, name, maxAmount);
 
                 if (potsFragment != null) {
                     potsFragment.addNewPot(newPot);

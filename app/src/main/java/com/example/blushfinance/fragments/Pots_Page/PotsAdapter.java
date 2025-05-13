@@ -4,8 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.blushfinance.R;
 import java.util.List;
@@ -58,16 +60,22 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     // ViewHolder for regular pots
     static class PotViewHolder extends RecyclerView.ViewHolder {
         private TextView nameTextView, incomeText;
+        private ImageView iconView;
+        private View background;
 
         public PotViewHolder(View itemView) {
             super(itemView);
             nameTextView = itemView.findViewById(R.id.pot_name);
-            incomeText = itemView.findViewById(R.id.incomeText); // Ensure this exists in p_item_pot.xml
-        }
+            incomeText = itemView.findViewById(R.id.incomeText);
+            iconView = itemView.findViewById(R.id.pot_icon);
+            background = itemView.findViewById(R.id.pot_background);
 
+        }
         public void bindPotData(Pot pot) {
             nameTextView.setText(pot.getName());
             incomeText.setText("Max: £" + pot.getMaxAmount()); // Display max amount
+            iconView.setImageResource(pot.getIconResId());
+            background.setBackgroundColor(ContextCompat.getColor(itemView.getContext(), pot.getColorResId()));
         }
     }
 

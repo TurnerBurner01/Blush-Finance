@@ -8,14 +8,28 @@
 
     <!-- Pot Color (Circle) -->
     <View
-        android:id="@+id/pot_color"
+        android:id="@+id/pot_background"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:background="@drawable/rounded_square_background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp" />
+
+    <!-- Pot Icon (Center of Background) -->
+    <ImageView
+        android:id="@+id/pot_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/pot_background"
+        app:layout_constraintBottom_toBottomOf="@id/pot_background"
+        app:layout_constraintStart_toStartOf="@id/pot_background"
+        app:layout_constraintEnd_toEndOf="@id/pot_background"
+        android:src="@drawable/pots_icon" />
+
 
     <!-- Pot Name -->
     <TextView
@@ -24,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Pot Name"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/pot_color"
+        app:layout_constraintTop_toBottomOf="@id/pot_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

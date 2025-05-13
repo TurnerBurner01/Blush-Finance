@@ -2,5 +2,7 @@
 <resources>
     <string-array name="pot_types">
         <item>Default</item>
+        <item>Holiday</item>
+        <item>Car</item>
     </string-array>
 </resources>

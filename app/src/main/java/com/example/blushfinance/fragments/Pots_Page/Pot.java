@@ -2,23 +2,23 @@ package com.example.blushfinance.fragments.Pots_Page;
 
 public class Pot {
     private String name;
-    private String color;
     private int maxAmount;
     private String type;
+    private int iconResId;
+    private int colorResId;
 
-    public Pot(String name, String color, int maxAmount, String type) {
+    public Pot(String name, int maxAmount, String type, int iconResId, int colorResId) {
         this.name = name;
-        this.color = color;
         this.maxAmount = maxAmount;
         this.type = type;
+        this.iconResId = iconResId;
+        this.colorResId = colorResId;
     }
+
 
     // Getters and setters for the fields
     public String getName() {
         return name;
-    }
-    public String getColor() {
-        return color;
     }
     public int getMaxAmount() {
         return maxAmount;
@@ -26,13 +26,24 @@ public class Pot {
     public String getType() {
         return type;
     }
+    public int getIconResId() {
+        return iconResId;
+    }
+
+    public int getColorResId() {
+        return colorResId;
+    }
+
+    public void setIconResId(int iconResId) {
+        this.iconResId = iconResId;
+    }
+
+    public void setColorResId(int colorResId) {
+        this.colorResId = colorResId;
+    }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public void setMaxAmount(int maxAmount) {
@@ -48,7 +59,6 @@ public class Pot {
     public String toString() {
         return "Pot{" +
                 "name='" + name + '\'' +
-                ", color='" + color + '\'' +
                 ", maxAmount=" + maxAmount +
                 ", type='" + type + '\'' +
                 '}';
