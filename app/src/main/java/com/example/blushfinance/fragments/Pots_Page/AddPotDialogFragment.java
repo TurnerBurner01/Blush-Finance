@@ -18,9 +18,14 @@ public class AddPotDialogFragment extends DialogFragment {
     private EditText nameInput, maxAmountInput;
     private Spinner typeSpinner;
     private PotsFragment potsFragment;
+    private PotAddedListener potAddedListener;
 
     public AddPotDialogFragment(PotsFragment potsFragment) {
         this.potsFragment = potsFragment;
+    }
+
+    public void setPotAddedListener(PotAddedListener listener) {
+        this.potAddedListener = listener;
     }
 
     @Override
@@ -52,16 +57,21 @@ public class AddPotDialogFragment extends DialogFragment {
                 int maxAmount = Integer.parseInt(maxAmountStr);
                 Pot newPot = PotFactory.createPot(type, name, maxAmount);
 
-                if (potsFragment != null) {
-                    potsFragment.addNewPot(newPot);
+                // Notify listener to add the pot
+                if (potAddedListener != null) {
+                    potAddedListener.onPotAdded(newPot);
                 }
 
                 dismiss();
             } catch (NumberFormatException e) {
-                Toast.makeText(getContext(), "Max amount must be a number", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Amount must be a number", Toast.LENGTH_SHORT).show();
             }
         });
 
         return view;
     }
+    public interface PotAddedListener {
+        void onPotAdded(Pot newPot);
+    }
 }
+

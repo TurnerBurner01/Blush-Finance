@@ -86,7 +86,13 @@ public class PotsFragment extends Fragment {
     private void updateIncomeUi() {
         incomeTextView.setText(String.format(Locale.UK, "£%,.2f", totalIncome));
     }
-
+    public void deductIncome(float amount) {
+        totalIncome -= amount;
+        updateIncomeUi();
+    }
+    public float getTotalIncome() {
+        return totalIncome;
+    }
     public void addNewPot(Pot newPot) {
         if (!potList.isEmpty() && potList.get(potList.size() - 1) == null) {
             potList.remove(potList.size() - 1);  // Remove the plus pot

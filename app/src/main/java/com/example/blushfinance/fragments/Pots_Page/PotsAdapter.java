@@ -8,11 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.blushfinance.R;
+
 import java.util.List;
+import java.util.Locale;
 
 public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -71,11 +74,11 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             incomeText = itemView.findViewById(R.id.incomeText);
             iconView = itemView.findViewById(R.id.pot_icon);
             background = itemView.findViewById(R.id.pot_background);
-
         }
+
         public void bindPotData(Pot pot) {
             nameTextView.setText(pot.getName());
-            incomeText.setText("Max: £" + pot.getMaxAmount()); // Display max amount
+            incomeText.setText(String.format(Locale.UK, "£%,.2f", (float) pot.getMaxAmount())); // Display max amount
             iconView.setImageResource(pot.getIconResId());
 
             // Keeps the background round
@@ -105,6 +108,21 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     // Open the dialog to add a new pot
     private void showAddPotDialog() {
         AddPotDialogFragment dialog = new AddPotDialogFragment(potsFragment);
+        dialog.setPotAddedListener(new AddPotDialogFragment.PotAddedListener() {
+            @Override
+            public void onPotAdded(Pot newPot) {
+                // Check if there is enough available income to add the pot
+                if (newPot.getMaxAmount() <= potsFragment.getTotalIncome()) {
+                    // Proceed to add the pot and update the income
+                    potsFragment.addNewPot(newPot);
+                    potsFragment.deductIncome(newPot.getMaxAmount());
+                } else {
+                    // Show a message or toast that there isn't enough income
+                    Toast.makeText(context, "Not enough income to add this pot!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
         dialog.show(((AppCompatActivity) context).getSupportFragmentManager(), "AddPotDialog");
     }
 }
+
