@@ -84,7 +84,7 @@ public class PotsFragment extends Fragment {
     }
 
     private void updateIncomeUi() {
-        incomeTextView.setText(String.format(Locale.UK, "£%.2f", totalIncome));
+        incomeTextView.setText(String.format(Locale.UK, "£%,.2f", totalIncome));
     }
 
     public void addNewPot(Pot newPot) {
