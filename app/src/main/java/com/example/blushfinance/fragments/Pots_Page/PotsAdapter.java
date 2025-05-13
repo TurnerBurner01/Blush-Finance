@@ -1,6 +1,8 @@
 package com.example.blushfinance.fragments.Pots_Page;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,7 +77,14 @@ public class PotsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             nameTextView.setText(pot.getName());
             incomeText.setText("Max: £" + pot.getMaxAmount()); // Display max amount
             iconView.setImageResource(pot.getIconResId());
-            background.setBackgroundColor(ContextCompat.getColor(itemView.getContext(), pot.getColorResId()));
+
+            // Keeps the background round
+            Drawable drawable = background.getBackground();
+            if (drawable instanceof GradientDrawable) {
+                GradientDrawable gradientDrawable = (GradientDrawable) drawable.mutate();
+                int color = ContextCompat.getColor(itemView.getContext(), pot.getColorResId());
+                gradientDrawable.setColor(color);
+            }
         }
     }
 
