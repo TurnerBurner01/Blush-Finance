@@ -45,6 +45,10 @@ android {
 }
 
 dependencies {
+
+
+
+// OkHttp Logging Interceptor
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -56,21 +60,10 @@ dependencies {
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
-
-    // Room dependencies
     implementation("androidx.room:room-runtime:$room_version_kts")
-    // If app code is Java:
     annotationProcessor("androidx.room:room-compiler:$room_version_kts")
-    // If app code is Kotlin and using kapt:
-    // kapt("androidx.room:room-compiler:$room_version_kts")
-    // If app code is Kotlin and using KSP:
-    // ksp("androidx.room:room-compiler:$room_version_kts")
-
-
     implementation("com.github.KwabenBerko:News-API-Java:1.0.2")
     implementation("com.squareup.picasso:picasso:2.8")
 
-    // OkHttp Logging Interceptor (if you need it, ensure you also have OkHttp)
-    // implementation("com.squareup.okhttp3:logging-interceptor:4.9.3") // Example version
-    // implementation("com.squareup.okhttp3:okhttp:4.9.3") // Example version for OkHttp itself
 }
+
