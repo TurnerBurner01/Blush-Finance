@@ -33,5 +33,5 @@
         <activity android:name=".fragments.Login_Page.ForgotPasswordActivity" />
 
     </application>
-
 </manifest>
+
