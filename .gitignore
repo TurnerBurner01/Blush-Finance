@@ -1,0 +1,46 @@
+     # ------------------------
+     # Gradle
+     # ------------------------
+     .gradle/
+     build/
+     !gradle/wrapper/gradle-wrapper.jar
+
+     # ------------------------
+     # Java & Compilation
+     # ------------------------
+     *.class
+     *.jar
+     *.war
+     *.ear
+
+     # ------------------------
+     # IntelliJ / Android Studio
+     # ------------------------
+     .idea/
+     *.iml
+     *.ipr
+     *.iws
+     out/
+
+     # ------------------------
+     # OS-specific
+     # ------------------------
+     .DS_Store
+     Thumbs.db
+
+     # ------------------------
+     # Log files
+     # ------------------------
+     *.log
+
+     # ------------------------
+     # Temporary files
+     # ------------------------
+     *.swp
+     *.swo
+     *.tmp
+
+     # ------------------------
+     # Local environment
+     # ------------------------
+     local.properties

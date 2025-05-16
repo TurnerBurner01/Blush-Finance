@@ -1,4 +1,8 @@
 package com.example.blushfinance.fragments.Login_Page;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0fdbb8c813017c4b03d9ec23f34b3493c7bad70c
 
 import android.content.Intent;
 import android.os.Bundle;

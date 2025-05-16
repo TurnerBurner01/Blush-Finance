@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.MyApp.ToggleButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:background">@drawable/btn_toggle_selector</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+</resources>

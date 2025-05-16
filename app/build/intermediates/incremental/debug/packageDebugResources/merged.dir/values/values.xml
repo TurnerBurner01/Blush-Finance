@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#F2DED0</color>
+    <color name="balance_blue">#00B0F0</color>
+    <color name="black">#FF000000</color>
+    <color name="darkGrey">#767b91</color>
+    <color name="expenses_red">#C00000</color>
+    <color name="gray">#808080</color>
+    <color name="income_green">#00B050</color>
+    <color name="lightGrey">#c7ccdb</color>
+    <color name="menuColor">#FA886E</color>
+    <color name="menu_card">#F2F2F2</color>
+    <color name="menu_card_detail">#D9D9D9</color>
+    <color name="menu_dark_text">#262626</color>
+    <color name="menu_expenses">#C00000</color>
+    <color name="menu_income">#00B050</color>
+    <color name="my_primary">#FA886E</color>
+    <color name="my_secondary">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="ac_dot">Dot</string>
+    <string name="ac_settings_icon">Settings</string>
+    <string name="app_name">Blush Finance</string>
+    <string name="balance_amount_label">£10,000.00</string>
+    <string name="balance_label">Your Balance</string>
+    <string name="email_hint">Email</string>
+    <string name="expenses_label">Expenses</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="income_label">Income</string>
+    <string name="logout">Log Out</string>
+    <string name="news_label">News</string>
+    <string name="password_hint">Password</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="profile">Profile</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="spending_label">Spending</string>
+    <string name="transactions_label">Transactions</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="welcome_text">Welcome </string>
+    <style name="Base.Theme.BlushFinance" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorPrimaryVariant">@color/my_primary</item>
+
+
+        <item name="colorSecondary">@color/my_secondary</item>
+
+
+
+
+        
+        
+    </style>
+    <style name="Theme.BlushFinance" parent="Base.Theme.BlushFinance"/>
+</resources>

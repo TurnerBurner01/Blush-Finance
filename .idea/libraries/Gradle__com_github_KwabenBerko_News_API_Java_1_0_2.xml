@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.KwabenBerko:News-API-Java:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.KwabenBerko" artifactId="News-API-Java" version="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.KwabenBerko/News-API-Java/1.0.2/ce8c3aad06f0e5b1dd05f05ab0a1fd10d5a4a92f/News-API-Java-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.KwabenBerko/News-API-Java/1.0.2/ac01a1fb8648f1527de3a6bd1ea9ae70f2682514/News-API-Java-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
