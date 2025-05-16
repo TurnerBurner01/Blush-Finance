@@ -17,9 +17,9 @@ import androidx.fragment.app.Fragment;
 import com.example.blushfinance.fragments.Finance_Page.FinanceFragment;
 import com.example.blushfinance.fragments.Home_Page.HomeFragment;
 import com.example.blushfinance.fragments.News_Page.NewsFragment;
-import com.example.blushfinance.fragments.Login_Page.ProfileFragment;
+import com.example.blushfinance.fragments.Login_Page.LoginFragment;
 import com.example.blushfinance.fragments.Pots_Page.PotsFragment;
-import com.example.blushfinance.fragments.Login_Page.ProfileFragment;
+import com.example.blushfinance.fragments.Profile_Page.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
